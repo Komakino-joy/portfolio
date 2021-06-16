@@ -3,18 +3,42 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  padding-bottom: 5vw;
+  padding-bottom: 4vw;
 }
 
 .section-text {
   padding: 0 2rem;
 }
 
+.section-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.5px;
+  color: rgb(53, 53, 53);
+  margin: 1.8em 0;
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+  letter-spacing: 0.5px;
+  color: rgb(75, 75, 75);
+  margin-bottom: 0;
+}
+
+.section-detail {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1vw;
+  line-height: 1.8vw;
+}
+
 .tech-stack {
+  padding: 0%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 70%;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
 }
 
 ul {
@@ -22,13 +46,82 @@ ul {
 }
 
 .tech-stack > li > img {
-  height: 100px;
+  height: 4vw;
+  margin-top: 0.5em;
+  padding-right: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tech-stack > li > img:hover {
+  transform: scale(1.1);
 }
 
 .section-image {
   width: 58%;
 }
 
-.section-footer-wrapper {
+.section-test-wrapper {
+  position: static;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: row;
+  min-height: 45vw;
+  padding-bottom: 4%;
+}
+
+.section-test-text {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.laptop-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 13%;
+  max-width: 63%;
+}
+
+.laptop-frame {
+  position: absolute;
+  width: 92%;
+}
+
+.laptop-screen {
+  width: 71%;
+  position: relative;
+  top: 6.5vw;
+  right: 10.5%;
+}
+
+.c-img {
+  height: 96%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .section-test-wrapper {
+    position: static;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10vw 0;
+    min-height: 45vw;
+  }
+
+  .tech-stack {
+    width: 100%;
+  }
+
+  .tech-stack > li > img {
+    height: 8vw;
+  }
+
+  .laptop-screen {
+    width: 71.55%;
+    top: 6vw;
+    right: 10.35%;
+  }
 }

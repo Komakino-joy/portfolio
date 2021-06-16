@@ -1,0 +1,21 @@
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-logo {
+  height: 30px;
+  padding-right: 1rem;
+}
+
+.github-logo {
+  padding-right: 2rem;
+}

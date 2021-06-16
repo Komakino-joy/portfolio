@@ -2,55 +2,38 @@ import React from 'react'
 
 import './homepage-section.styles.css'
 
-const Section = ({isFooter, bgcolor, image, alt, tech1, techAlt1 }) => {
+const Section = ({ bgcolor, projectName, image, alt, ...props}) => {
     return (
-        <div className={`${isFooter ? 'section-footer-wrapper' : null } section-wrapper`} style={{backgroundColor:bgcolor}}>
-        {
-            isFooter ? null : (
+        <div className='section-wrapper' style={{backgroundColor:bgcolor}}>
                 <div className='section-text'>
-                    <h3>Project Title</h3>
+                    <h3 className='section-header'>{projectName}</h3>
 
-                    <h4>Project brief</h4>
-                    <p>
-                        Ad sunt laborum ut quis magna magna commodo sit occaecat qui sit. 
-                        Ex ea nisi sunt irure mollit occaecat anim sint magna. Ex incididunt minim nisi laboris elit sunt ex. 
-                        Tempor proident elit laborum quis commodo id voluptate mollit do nostrud nisi. 
-                        Reprehenderit sunt reprehenderit adipisicing et cupidatat ea proident proident voluptate ut Lorem esse do aute.
-                        Ex pariatur consectetur aliquip occaecat cupidatat nostrud cillum
-                    </p>
+                    <h4 className='section-title'>Project brief</h4>
+                    <p className='section-detail'> {props.desc1} </p>
                     
                     <br/>
 
-                    <h4>My role</h4>
-                    <p>
-                        Ad sunt laborum ut quis magna magna commodo sit occaecat qui sit. 
-                        Ex ea nisi sunt irure mollit occaecat anim sint magna. Ex incididunt minim nisi laboris elit sunt ex. 
-                        Tempor proident elit laborum quis commodo id voluptate mollit do nostrud nisi. 
-                        Reprehenderit sunt reprehenderit adipisicing et cupidatat ea proident proident voluptate ut Lorem esse do aute.
-                        Ex pariatur consectetur aliquip occaecat cupidatat nostrud cillum
-                    </p>
+                    <h4 className='section-title'>My role</h4>
+                    <p className='section-detail'> {props.desc2} </p>
 
                     <br/>
 
-                    <h4>Browser support</h4>
-                    <p>
-                        Ad sunt laborum ut quis magna magna commodo sit occaecat qui sit. 
-                        Ex ea nisi sunt irure mollit occaecat anim sint magna. Ex incididunt minim nisi laboris elit sunt ex. 
-                        Tempor proident elit laborum quis commodo id voluptate mollit do nostrud nisi. 
-                        Reprehenderit sunt reprehenderit adipisicing et cupidatat ea proident proident voluptate ut Lorem esse do aute.
-                        Ex pariatur consectetur aliquip occaecat cupidatat nostrud cillum
-                    </p>
+                    <h4 className='section-title'>Technologies Used</h4>
 
                 <ul className='tech-stack'>
-                    <li><img src={tech1} alt={techAlt1}/></li>
-                    <li>code1</li>
-                    <li>code1</li>
-                    <li>code1</li>
+                    <li><img src={props.tech1} alt={props.techAlt1}/></li>
+                    <li><img src={props.tech2} alt={props.techAlt2}/></li>
+                    <li><img src={props.tech3} alt={props.techAlt3}/></li>
+                    <li><img src={props.tech4} alt={props.techAlt4}/></li>
+                    <li><img src={props.tech5} alt={props.techAlt5}/></li>
+                    <li><img src={props.tech6} alt={props.techAlt6}/></li>
+                    <li><img src={props.tech7} alt={props.techAlt7}/></li>
+                    <li><img src={props.tech8} alt={props.techAlt8}/></li>
+                    <li><img src={props.tech9} alt={props.techAlt9}/></li>
+                    <li><img src={props.tech10} alt={props.techAlt10}/></li>
                 </ul>
 
-                </div>
-            )
-        }
+                </div> 
             <img className='section-image' src={image} alt={alt}></img>
         </div>
     )
