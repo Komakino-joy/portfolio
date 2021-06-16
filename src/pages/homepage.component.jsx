@@ -31,6 +31,56 @@ import vueLogo from '../assets/vue.logo.svg'
 
 import TechLogo from '../components/tech-logo/tech-logo.component'
 
+const html = () => (
+    <TechLogo 
+        href='https://developer.mozilla.org/en-US/docs/Web/HTML'
+        image={htmlLogo}
+        alt='html five logo'
+    />
+) 
+
+const sass = () => (
+    <TechLogo 
+        href='https://sass-lang.com/'
+        image={sassLogo}
+        alt='sass logo'
+    />
+) 
+
+const js = () => (
+    <TechLogo 
+        href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+        image={jsLogo}
+        alt='javascript logo'
+    />
+) 
+
+const firebase = () => (
+    <TechLogo 
+        href='https://firebase.google.com/?gclid=CjwKCAjwwqaGBhBKEiwAMk-FtOODwv2rC8fOc37MnA1K6-ygdvkrHJM4pREmprtZtKHL5rkR27h73RoCWVUQAvD_BwE&gclsrc=aw.ds'
+        image={firebaseLogo}
+        alt='google firebase logo'
+    />
+) 
+
+const mongodb = () => (
+    <TechLogo 
+        href='https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_united_states_search_brand_atlas_desktop&utm_term=mongodb%20docs&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=1718986498&gclid=CjwKCAjwwqaGBhBKEiwAMk-FtGMpoI5990hy209BQHDBq1aSl04wgK4LK_bRHwqpX7xfEulLjOny8hoCfcsQAvD_BwE'
+        image={mongoLogo}
+        alt='mongo db logo'
+    />
+) 
+
+
+const vue = () => (
+    <TechLogo 
+        href='https://v3.vuejs.org/'
+        image={vueLogo}
+        alt='vue logo'
+    />
+) 
+
+
 const react = () => (
     <TechLogo 
         href='https://reactjs.org/docs/getting-started.html'
