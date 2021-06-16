@@ -45,7 +45,7 @@ ul {
   list-style-type: none;
 }
 
-.tech-stack > li > img {
+.tech-item {
   height: 4vw;
   margin-top: 0.5em;
   padding-right: 1em;
@@ -53,7 +53,7 @@ ul {
   transition: all 0.2s ease-in-out;
 }
 
-.tech-stack > li > img:hover {
+.tech-item:hover {
   transform: scale(1.1);
 }
 

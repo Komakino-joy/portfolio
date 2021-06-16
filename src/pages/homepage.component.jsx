@@ -4,7 +4,6 @@ import Banner from '../components/banner/banner.component'
 import Section from '../components/homepage-section/homepage-section.component'
 import SectionTest from '../components/homepage-section/section-test'
 
-import workingImg from '../assets/person-coding.svg'
 import lenditImg from '../assets/lendit-laptop.png'
 import nasaImg from '../assets/nasa-mission-control-site.png'
 import musShopImg from '../assets/mus-shop-laptop.png'
@@ -30,6 +29,60 @@ import nodeLogo from '../assets/nodejs.logo.svg'
 import vueLogo from '../assets/vue.logo.svg'
 
 
+import TechLogo from '../components/tech-logo/tech-logo.component'
+
+const react = () => (
+    <TechLogo 
+        href='https://reactjs.org/docs/getting-started.html'
+        image={reactLogo}
+        alt='react logo'
+    />
+) 
+
+const redux = () => (
+    <TechLogo 
+        href='https://redux.js.org/'
+        image={reduxLogo}
+        alt='redux logo'
+    />
+) 
+
+const saga = () => (
+    <TechLogo 
+        href='https://redux-saga.js.org/'
+        image={sagaLogo}
+        alt='redux saga logo'
+    />
+) 
+
+
+const css = () => (
+    <TechLogo 
+        href='https://developer.mozilla.org/en-US/docs/Web/CSS'
+        image={cssLogo}
+        alt='css logo'
+    />
+) 
+
+
+const node = () => (
+    <TechLogo 
+        href='https://nodejs.org/en/docs/'
+        image={nodeLogo}
+        alt='node logo'
+    />
+) 
+
+
+const postgres = () => (
+    <TechLogo 
+        href='https://www.postgresql.org/'
+        image={pgLogo}
+        alt='postgres logo'
+    />
+) 
+
+
 const Homepage = () => {
     return (
         <>
@@ -44,7 +97,12 @@ const Homepage = () => {
                 image4={countDetail} 
                 image5={reportUpload} 
                 alt='inventory view project'
-                tech1={htmlLogo} techAlt1='html five logo'
+                tech1={react()} techAlt1='react logo'
+                tech2={redux()} techAlt2='redux logo'
+                tech3={saga()} techAlt3='redux saga logo'
+                tech4={css()} techAlt4='css three logo'
+                tech5={node()} techAlt5='node logo'
+                tech6={postgres()} techAlt6='postgres logo'
                 desc1='
                     The Lendit Asset Tracking application is a simple to use check-in/check-out system that
                     facilitates asset management. The application solves keeping track of all transactions 
@@ -63,10 +121,10 @@ const Homepage = () => {
                 bgcolor='#ececec' 
                 image={lenditImg} 
                 alt='laptop with asset tracking app' 
-                tech1={reactLogo} techAlt1='html five logo'
-                tech2={sagaLogo} techAlt2='html five logo'
-                tech3={nodeLogo} techAlt3='html five logo'
-                tech4={pgLogo} techAlt4='html five logo'
+                tech1={react()} 
+                tech2={saga()} techAlt2='redux saga logo'
+                tech3={node()} techAlt3='node logo'
+                tech4={postgres()} techAlt4='postgres logo'
 
 
                 desc1='

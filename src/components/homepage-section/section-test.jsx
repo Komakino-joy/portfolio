@@ -31,13 +31,13 @@ const SectionTest = ({isFooter, bgcolor, projectName, ...props}) => {
                 <h4 className='section-title'>Technologies Used</h4>
 
                 <ul className='tech-stack'>
-                    <li><img src={props.tech1} alt={props.techAlt1}/></li>
-                    <li><img src={props.tech2} alt={props.techAlt2}/></li>
-                    <li><img src={props.tech3} alt={props.techAlt3}/></li>
-                    <li><img src={props.tech4} alt={props.techAlt4}/></li>
-                    <li><img src={props.tech5} alt={props.techAlt5}/></li>
-                    <li><img src={props.tech6} alt={props.techAlt6}/></li>
-                    <li><img src={props.tech7} alt={props.techAlt7}/></li>
+                    <li className='tech-item'>{props.tech1}</li>
+                    <li className='tech-item'>{props.tech2}</li>
+                    <li className='tech-item'>{props.tech3}</li>
+                    <li className='tech-item'>{props.tech4}</li>
+                    <li className='tech-item'>{props.tech5}</li>
+                    <li className='tech-item'>{props.tech6}</li>
+                    <li className='tech-item'>{props.tech7}</li>
                 </ul>
 
                 </div>
