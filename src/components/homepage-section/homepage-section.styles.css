@@ -69,6 +69,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 13%;
+  min-width: 63%;
   max-width: 63%;
 }
 
@@ -80,7 +81,7 @@ ul {
 .laptop-screen {
   width: 71%;
   position: relative;
-  top: 6.5vw;
+  padding-top: 10%;
   right: 10.5%;
 }
 
@@ -125,7 +126,7 @@ ul {
 
   .laptop-screen {
     width: 71.55%;
-    top: 6vw;
+    padding-top: 10%;
     right: 10.35%;
   }
 }

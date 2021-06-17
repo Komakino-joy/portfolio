@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
 
 .footer-image {
-  width: 80vw;
+  width: 65vw;
 }

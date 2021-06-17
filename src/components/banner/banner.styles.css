@@ -1,5 +1,5 @@
 .banner-wrapper {
-  height: 75vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@
   }
 
   .laptop-logo {
-    height: 30%;
+    height: 15%;
   }
 
   .banner-header {
