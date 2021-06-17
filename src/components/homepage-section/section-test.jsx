@@ -3,8 +3,7 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-import laptopFrame from '../../assets/laptop_blank.svg'
-import laptopBase from '../../assets/lendit-laptop.png'
+import laptopBase from '../../assets/laptop.png'
 
 import './homepage-section.styles.css'
 
@@ -55,11 +54,10 @@ const SectionTest = ({isFooter, bgcolor, projectName, ...props}) => {
                     interval={5000}
                     >
 
-                    <img className='c-img' src={props.image} alt={props.alt} />
-                    <img className='c-img'src={props.image2} alt={props.alt2} />
-                    <img className='c-img'src={props.image3} alt={props.alt2} />
-                    <img className='c-img'src={props.image4} alt={props.alt2} />
-                    <img className='c-img'src={props.image5} alt={props.alt2} />
+                    <img className='c-img' src={props.image1} alt={props.alt1} />
+                    <img className='c-img' src={props.image2} alt={props.alt2} />
+                    <img className='c-img' src={props.image3} alt={props.alt2} />
+                    <img className='c-img' src={props.image4} alt={props.alt2} />
                 </Carousel>
             </div>
             

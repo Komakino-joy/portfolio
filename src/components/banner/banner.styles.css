@@ -12,7 +12,7 @@
 }
 
 .banner-header {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   margin-bottom: 0;
   font-size: 1.5vw;
@@ -20,8 +20,27 @@
 }
 
 .banner-subheader {
-  font-family: "Baloo Tammudu 2", cursive;
+  font-family: 'Baloo Tammudu 2', cursive;
   margin-top: 0;
   font-size: 1vw;
   color: #333333;
+}
+
+@media screen and (max-width: 800px) {
+  .banner-wrapper {
+    height: 100vh;
+    padding-top: 40px;
+  }
+
+  .laptop-logo {
+    height: 30%;
+  }
+
+  .banner-header {
+    font-size: 25px;
+  }
+
+  .banner-subheader {
+    font-size: 25px;
+  }
 }
