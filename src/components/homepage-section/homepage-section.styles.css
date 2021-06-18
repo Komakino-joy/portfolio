@@ -20,6 +20,7 @@ a:hover {
 .section-text {
   position: relative;
   padding: 0 2rem;
+  min-width: 37%;
   max-width: 37%;
 }
 
@@ -89,6 +90,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 13%;
+  min-width: 63%;
   max-width: 63%;
 }
 
