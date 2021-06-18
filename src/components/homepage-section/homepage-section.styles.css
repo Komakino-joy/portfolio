@@ -20,8 +20,7 @@ a:hover {
 .section-text {
   position: relative;
   padding: 0 2rem;
-  min-width: 37%;
-  max-width: 37%;
+  width: 30%;
 }
 
 .section-link {
@@ -90,8 +89,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 13%;
-  min-width: 63%;
-  max-width: 63%;
+  width: 60%;
 }
 
 .laptop-frame {
@@ -112,7 +110,7 @@ ul {
 }
 
 .mobile-image {
-  height: 50vw;
+  height: 40vw;
 }
 
 @media screen and (max-width: 800px) {
@@ -127,7 +125,7 @@ ul {
   }
 
   .section-text {
-    max-width: 100%;
+    width: 90%;
   }
 
   .section-header {
