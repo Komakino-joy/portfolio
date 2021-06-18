@@ -1,9 +1,0 @@
-.tech-logo {
-  height: 100%;
-}
-
-@media screen and (max-width: 800px) {
-  .tech-logo {
-    height: 25px;
-  }
-}
