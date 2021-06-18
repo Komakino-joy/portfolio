@@ -7,7 +7,7 @@ import laptopBase from '../../assets/laptop.png'
 
 import './homepage-section.styles.css'
 
-const SectionTest = ({isFooter, bgcolor, projectName, ...props}) => {
+const Section = ({isFooter, bgcolor, projectName, ...props}) => {
 
     React.useEffect(() => {
         window.addEventListener("resize", updateWidth);
@@ -101,4 +101,4 @@ const SectionTest = ({isFooter, bgcolor, projectName, ...props}) => {
 
 
 
-export default SectionTest
+export default Section

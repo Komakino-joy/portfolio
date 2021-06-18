@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Banner from '../components/banner/banner.component'
-import SectionTest from '../components/homepage-section/section-test'
+import Section from '../components/homepage-section/homepage-section'
 
 import invViewMobile from '../assets/mobile-inv-view.svg'
 import invViewImg from '../assets/inv-view-cropped.png'
@@ -41,7 +41,7 @@ const Homepage = () => {
         <>
             <Banner/>
 
-            <SectionTest 
+            <Section 
                 projectName='Inventory View'
                 bgcolor='#ddd' 
                 mobileImage={invViewMobile}
@@ -66,7 +66,7 @@ const Homepage = () => {
                 
                 />
 
-            <SectionTest 
+            <Section 
                 projectName='Lendit Asset Tracking'
                 bgcolor='#ececec' 
                 mobileImage={lenditMobile}
@@ -94,7 +94,7 @@ const Homepage = () => {
     
                 />
 
-            <SectionTest 
+            <Section 
                 projectName='Launch Tracking App'
                 bgcolor='#ddd' 
                 mobileImage={launchMobile}
@@ -121,7 +121,7 @@ const Homepage = () => {
     
                 />
 
-            <SectionTest 
+            <Section 
                 projectName='Mus Shop'
                 bgcolor='#ececec' 
                 mobileImage={proMobile}
@@ -150,7 +150,7 @@ const Homepage = () => {
     
             />
 
-            <SectionTest 
+            <Section 
                 projectName='Crown Shop'
                 bgcolor='#ddd' 
                 mobileImage={crwnMobile}
