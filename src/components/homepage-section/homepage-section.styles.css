@@ -20,7 +20,7 @@ a:hover {
 .section-text {
   position: relative;
   padding: 0 2rem;
-  max-width: 37%;
+  width: 30%;
 }
 
 .section-link {
@@ -89,7 +89,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 13%;
-  max-width: 63%;
+  width: 60%;
 }
 
 .laptop-frame {
