@@ -21,19 +21,37 @@ const SectionTest = ({isFooter, bgcolor, projectName, ...props}) => {
       };
 
     return (
-        <div className={'section-test-wrapper'} style={{backgroundColor:bgcolor}}>
+        <div className={'section-wrapper'} style={{backgroundColor:bgcolor}}>
                     {
             isFooter ? null : (
-                <div className='section-test-text'>
+                <div className='section-text'>
                     <h3 className='section-header'>{projectName}</h3>
 
-                <h4 className='section-title'>Project brief</h4>
+                <h4 className='section-title'>Project Description</h4>
                 <p className='section-detail'> {props.desc1} </p>
 
                 <br/>
 
-                <h4 className='section-title'>My role</h4>
-                <p className='section-detail'> {props.desc2} </p>
+                <h4 className='github-title'>GitHub Repository</h4>
+                <a href={props.githubRepo}>
+                    <p className='section-link'> {props.githubRepo} </p>
+                </a>
+                <a href={props.githubRepo2}>
+                    <p className='section-link'> {props.githubRepo2} </p>
+                </a>
+
+                {props.liveDemo ?
+                    <>
+                        
+                        <h4 className='section-title'>Live Demonstration</h4>
+                        <a href={props.liveDemo}>
+                            <p className='section-link'> {props.liveDemo} </p>
+                        </a>
+                        
+                    </>
+                    : null
+                }
+
 
                 <br/>
 

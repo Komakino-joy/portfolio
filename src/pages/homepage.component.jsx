@@ -3,6 +3,7 @@ import React from 'react'
 import Banner from '../components/banner/banner.component'
 import SectionTest from '../components/homepage-section/section-test'
 
+import invViewMobile from '../assets/mobile-inv-view.svg'
 import invViewImg from '../assets/inv-view-cropped.png'
 import progressView from '../assets/progress_view.PNG'
 import shrinkView from '../assets/shrink-page.png'
@@ -25,13 +26,15 @@ import proShopProduct from '../assets/pro-cam.png'
 import proShopCheckout from '../assets/pro-checkout.png'
 import proShopAdmin from '../assets/pro-admin.png'
 
-
+import crwnMobile from '../assets/mobile-crwn.svg'
 import crwnHome from '../assets/crwn-shop.PNG'
 import crwnShop from '../assets/shop-page.png'
 import crwnSignIn from '../assets/sign-in-crwn.png'
 import crwnCart from '../assets/crwn-checkout.png'
 
-import { html, js, react, redux, saga, css, sass, node, postgres, mongodb, firebase} from '../components/tech-logo/logos.js'
+import { 
+    html, js, react, redux, saga, css, sass, bootstrap, 
+    styled, node, postgres, mongodb, firebase} from '../components/tech-logo/logos.js'
 
 const Homepage = () => {
     return (
@@ -41,7 +44,7 @@ const Homepage = () => {
             <SectionTest 
                 projectName='Inventory View'
                 bgcolor='#ddd' 
-                mobileImage={null}
+                mobileImage={invViewMobile}
                 image1={invViewImg} 
                 image2={progressView} 
                 image3={shrinkView} 
@@ -54,17 +57,14 @@ const Homepage = () => {
                 tech5={node()}
                 tech6={postgres()} 
                 desc1='
-                    The Lendit Asset Tracking application is a simple to use check-in/check-out system that
-                    facilitates asset management. The application solves keeping track of all transactions 
-                    made. Users of the app can pull reports for assets that are available, in use, and
-                    those in quarantine. The historical data of all assets can also be pulled from this app.
+                    The Inventory View application is an elegant overview of inventory in a large scale logistics
+                    environment. The app displays important inventory metrics. Users can upload large excel spreadsheets
+                    containing hundreds of thousands of rows in an asynchronous non-blocking manner so that their 
+                    browsing experience will not be interrupted while the data finishes uploading. 
                 '
-                desc2='
-                    Designed the layout and components; 
-                    built front-end and back-end;
-                    tested application in development;
-                    deployed to production. 
-                '/>
+                githubRepo='https://github.com/Komakino-joy/inv_view_v3'
+                
+                />
 
             <SectionTest 
                 projectName='Lendit Asset Tracking'
@@ -77,21 +77,20 @@ const Homepage = () => {
                 alt='laptop with asset tracking app' 
                 tech1={react()} 
                 tech2={saga()} 
-                tech3={node()} 
-                tech4={postgres()} 
+                tech3={styled()}
+                tech4={node()} 
+                tech5={postgres()} 
 
-                desc1='
+                desc1="
                     The Lendit Asset Tracking application is a simple to use check-in/check-out system that
                     facilitates asset management. The application solves keeping track of all transactions 
                     made. Users of the app can pull reports for assets that are available, in use, and
                     those in quarantine. The historical data of all assets can also be pulled from this app.
-                '
-                desc2='
-                    Designed the layout and components; 
-                    built front-end and back-end;
-                    tested application in development;
-                    deployed to production. 
-                '
+                "
+                githubRepo='https://github.com/Komakino-joy/lendit'
+                githubRepo2='https://github.com/Komakino-joy/lendit_api'
+
+                liveDemo='https://lendit-asset-tracker.herokuapp.com/home'
     
                 />
 
@@ -109,18 +108,16 @@ const Homepage = () => {
                 tech4={postgres()} 
 
 
-                desc1='
-                    The Lendit Asset Tracking application is a simple to use check-in/check-out system that
-                    facilitates asset management. The application solves keeping track of all transactions 
-                    made. Users of the app can pull reports for assets that are available, in use, and
-                    those in quarantine. The historical data of all assets can also be pulled from this app.
-                '
-                desc2='
-                    Designed the layout and components; 
-                    built front-end and back-end;
-                    tested application in development;
-                    deployed to production. 
-                '
+                desc1="
+                    The Launch tracking application is a fun application that parses NASA's publicly 
+                    available exoplanet data and determines which are capable of harboring life. Users are
+                    able to schedule launch missions to those particular planets. The app also uses the SpaceX API
+                    to list all planned and historical launches made by SpaceX. This application is not affiliated
+                    with NASA or SpaceX in any way.  
+                "
+                githubRepo='https://github.com/Komakino-joy/NASA-PROJECT'
+
+                liveDemo='https://launch-schedule-app.herokuapp.com/'
     
                 />
 
@@ -135,52 +132,48 @@ const Homepage = () => {
                 tech1={react()} 
                 tech2={redux()} 
                 tech3={node()} 
-                tech4={css()} 
+                tech4={bootstrap()} 
                 tech5={mongodb()} 
 
 
                 desc1='
-                    The Lendit Asset Tracking application is a simple to use check-in/check-out system that
-                    facilitates asset management. The application solves keeping track of all transactions 
-                    made. Users of the app can pull reports for assets that are available, in use, and
-                    those in quarantine. The historical data of all assets can also be pulled from this app.
+                    The Mus Shop application is a template for an e-commerce platform. 
+                    User functionalities include: browsing through categories; adding items to cart; and processing payments.
+                    Admin functionalities include: adding products; removing products and users.
+                    All styles are made using React Bootstrap5 components.  
+                    The app utilizes the PayPal API to handle and process secure payments from the customer. Shop data 
+                    and user credentials are stored in MongoDB and user authentication is handled with Node js.
                 '
-                desc2='
-                    Designed the layout and components; 
-                    built front-end and back-end;
-                    tested application in development;
-                    deployed to production. 
-                '
+                githubRepo='https://github.com/Komakino-joy/ProShop'
+
+                liveDemo='https://app-mus-shop.herokuapp.com/'
     
             />
 
             <SectionTest 
                 projectName='Crown Shop'
                 bgcolor='#ddd' 
-                mobileImage={null}
+                mobileImage={crwnMobile}
                 image1={crwnHome} 
                 image2={crwnShop} 
                 image3={crwnCart} 
                 image4={crwnSignIn} 
                 tech1={react()} 
                 tech2={saga()} 
-                tech3={node()} 
-                tech4={sass()} 
-                tech5={firebase()} 
+                tech3={sass()} 
+                tech4={firebase()} 
 
 
-                desc1='
-                    The Lendit Asset Tracking application is a simple to use check-in/check-out system that
-                    facilitates asset management. The application solves keeping track of all transactions 
-                    made. Users of the app can pull reports for assets that are available, in use, and
-                    those in quarantine. The historical data of all assets can also be pulled from this app.
-                '
-                desc2='
-                    Designed the layout and components; 
-                    built front-end and back-end;
-                    tested application in development;
-                    deployed to production. 
-                '
+                desc1="
+                    The CRWN shop application is a template for an e-commerce platform. 
+                    Functionalities include: browsing through categories; adding items to cart; and processing payments.
+                    The app utilizes the Stripe API to handle and process secure payments from the customer. Shop data 
+                    and user credentials are stored in Google Cloud Firestore and 
+                    user authentication is handled by Google as well.
+                "
+                githubRepo='https://github.com/Komakino-joy/mus/tree/master/client'
+
+                liveDemo='https://mus-shop.herokuapp.com/'
     
             />
 

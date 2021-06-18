@@ -10,15 +10,36 @@ import pgLogo from '../../assets/postgres.logo.svg'
 import mongoLogo from '../../assets/mongodb.logo.svg'
 import nodeLogo from '../../assets/nodejs.logo.svg'
 import vueLogo from '../../assets/vue.logo.svg'
+import styledLogo from '../../assets/styled-components.png'
+import bootstrapLogo from '../../assets/bootstrap-5.svg'
 
 
 import TechLogo from './tech-logo.component'
+
+export const bootstrap = () => (
+    <TechLogo 
+        href='https://getbootstrap.com/docs/5.0/getting-started/introduction/'
+        image={bootstrapLogo}
+        alt='bootstrap logo'
+        title='Bootstrap 5'
+    />
+) 
+
+export const styled = () => (
+    <TechLogo 
+        href='https://styled-components.com/'
+        image={styledLogo}
+        alt='styled components logo'
+        title='Styled Components'
+    />
+) 
 
 export const html = () => (
     <TechLogo 
         href='https://developer.mozilla.org/en-US/docs/Web/HTML'
         image={htmlLogo}
         alt='html five logo'
+        title='HTML 5'
     />
 ) 
 
@@ -27,6 +48,7 @@ export const sass = () => (
         href='https://sass-lang.com/'
         image={sassLogo}
         alt='sass logo'
+        title='Sass'
     />
 ) 
 
@@ -35,6 +57,7 @@ export const js = () => (
         href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
         image={jsLogo}
         alt='javascript logo'
+        title='JavaScript'
     />
 ) 
 
@@ -43,6 +66,7 @@ export const firebase = () => (
         href='https://firebase.google.com/?gclid=CjwKCAjwwqaGBhBKEiwAMk-FtOODwv2rC8fOc37MnA1K6-ygdvkrHJM4pREmprtZtKHL5rkR27h73RoCWVUQAvD_BwE&gclsrc=aw.ds'
         image={firebaseLogo}
         alt='google firebase logo'
+        title='Firebase'
     />
 ) 
 
@@ -51,6 +75,7 @@ export const mongodb = () => (
         href='https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_united_states_search_brand_atlas_desktop&utm_term=mongodb%20docs&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=1718986498&gclid=CjwKCAjwwqaGBhBKEiwAMk-FtGMpoI5990hy209BQHDBq1aSl04wgK4LK_bRHwqpX7xfEulLjOny8hoCfcsQAvD_BwE'
         image={mongoLogo}
         alt='mongo db logo'
+        title='MongoDB'
     />
 ) 
 
@@ -60,6 +85,7 @@ export const vue = () => (
         href='https://v3.vuejs.org/'
         image={vueLogo}
         alt='vue logo'
+        title='Vue'
     />
 ) 
 
@@ -69,6 +95,7 @@ export const react = () => (
         href='https://reactjs.org/docs/getting-started.html'
         image={reactLogo}
         alt='react logo'
+        title='React'
     />
 ) 
 
@@ -77,6 +104,7 @@ export const redux = () => (
         href='https://redux.js.org/'
         image={reduxLogo}
         alt='redux logo'
+        title='Redux'
     />
 ) 
 
@@ -85,6 +113,7 @@ export const saga = () => (
         href='https://redux-saga.js.org/'
         image={sagaLogo}
         alt='redux saga logo'
+        title='Redux Saga'
     />
 ) 
 
@@ -94,6 +123,7 @@ export const css = () => (
         href='https://developer.mozilla.org/en-US/docs/Web/CSS'
         image={cssLogo}
         alt='css logo'
+        title='CSS'
     />
 ) 
 
@@ -103,6 +133,7 @@ export const node = () => (
         href='https://nodejs.org/en/docs/'
         image={nodeLogo}
         alt='node logo'
+        title='Node js'
     />
 ) 
 
@@ -112,5 +143,6 @@ export const postgres = () => (
         href='https://www.postgresql.org/'
         image={pgLogo}
         alt='postgres logo'
+        title='PostgreSQL'
     />
 ) 
