@@ -34,7 +34,7 @@ const Section = ({ bgcolor, projectName, image, alt, ...props}) => {
                 </ul>
 
                 </div> 
-            <img className='section-image' src={image} alt={alt}></img>
+            
         </div>
     )
 }

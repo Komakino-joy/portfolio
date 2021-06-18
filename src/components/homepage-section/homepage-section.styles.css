@@ -11,6 +11,7 @@
 .section-test-text {
   position: relative;
   padding: 0 2rem;
+  max-width: 37%;
 }
 
 .section-header {
@@ -69,7 +70,6 @@ ul {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 13%;
-  min-width: 63%;
   max-width: 63%;
 }
 
@@ -90,6 +90,10 @@ ul {
   border-radius: 5px;
 }
 
+.mobile-image {
+  height: 50vw;
+}
+
 @media screen and (max-width: 800px) {
   .section-test-wrapper {
     position: static;
@@ -99,6 +103,10 @@ ul {
     padding: 5vw 0;
     min-height: 100vw;
     width: 100vw;
+  }
+
+  .section-test-text {
+    max-width: 100%;
   }
 
   .section-header {

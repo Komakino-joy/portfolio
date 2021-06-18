@@ -8,16 +8,18 @@ import progressView from '../assets/progress_view.PNG'
 import shrinkView from '../assets/shrink-page.png'
 import reportUpload from '../assets/report-upload.png'
 
+import lenditMobile from '../assets/mobile-lendit.svg'
 import lenditSignIn from '../assets/sign-in.png' 
 import lenditHome from '../assets/lendit-home.png'
 import lenditAssets from '../assets/assets-in-use.png'
 import lenditActivity from '../assets/activity-tracking.png'
 
+import launchMobile from '../assets/mobile-launch-app.svg'
 import launchControlHome from '../assets/launch-schedule-home.png'
 import launchControlUpcoming from '../assets/launch-schedule-upcoming.png'
 import launchControlHistory from '../assets/launch-schedule-history.png'
 
-
+import proMobile from '../assets/mobile-mus-shop.svg'
 import proShopHome from '../assets/pro-home.png'
 import proShopProduct from '../assets/pro-cam.png'
 import proShopCheckout from '../assets/pro-checkout.png'
@@ -29,123 +31,7 @@ import crwnShop from '../assets/shop-page.png'
 import crwnSignIn from '../assets/sign-in-crwn.png'
 import crwnCart from '../assets/crwn-checkout.png'
 
-import htmlLogo from '../assets/html5.logo.svg'
-import cssLogo from '../assets/css3.logo.svg'
-import sassLogo from '../assets/sass.logo.svg'
-import jsLogo from '../assets/js.logo.svg'
-import reactLogo from '../assets/react.logo.svg'
-import reduxLogo from '../assets/redux.logo.svg'
-import sagaLogo from '../assets/redux-saga.logo.svg'
-import firebaseLogo from '../assets/firebase.logo.svg'
-import pgLogo from '../assets/postgres.logo.svg'
-import mongoLogo from '../assets/mongodb.logo.svg'
-import nodeLogo from '../assets/nodejs.logo.svg'
-import vueLogo from '../assets/vue.logo.svg'
-
-
-import TechLogo from '../components/tech-logo/tech-logo.component'
-
-const html = () => (
-    <TechLogo 
-        href='https://developer.mozilla.org/en-US/docs/Web/HTML'
-        image={htmlLogo}
-        alt='html five logo'
-    />
-) 
-
-const sass = () => (
-    <TechLogo 
-        href='https://sass-lang.com/'
-        image={sassLogo}
-        alt='sass logo'
-    />
-) 
-
-const js = () => (
-    <TechLogo 
-        href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-        image={jsLogo}
-        alt='javascript logo'
-    />
-) 
-
-const firebase = () => (
-    <TechLogo 
-        href='https://firebase.google.com/?gclid=CjwKCAjwwqaGBhBKEiwAMk-FtOODwv2rC8fOc37MnA1K6-ygdvkrHJM4pREmprtZtKHL5rkR27h73RoCWVUQAvD_BwE&gclsrc=aw.ds'
-        image={firebaseLogo}
-        alt='google firebase logo'
-    />
-) 
-
-const mongodb = () => (
-    <TechLogo 
-        href='https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_united_states_search_brand_atlas_desktop&utm_term=mongodb%20docs&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=1718986498&gclid=CjwKCAjwwqaGBhBKEiwAMk-FtGMpoI5990hy209BQHDBq1aSl04wgK4LK_bRHwqpX7xfEulLjOny8hoCfcsQAvD_BwE'
-        image={mongoLogo}
-        alt='mongo db logo'
-    />
-) 
-
-
-const vue = () => (
-    <TechLogo 
-        href='https://v3.vuejs.org/'
-        image={vueLogo}
-        alt='vue logo'
-    />
-) 
-
-
-const react = () => (
-    <TechLogo 
-        href='https://reactjs.org/docs/getting-started.html'
-        image={reactLogo}
-        alt='react logo'
-    />
-) 
-
-const redux = () => (
-    <TechLogo 
-        href='https://redux.js.org/'
-        image={reduxLogo}
-        alt='redux logo'
-    />
-) 
-
-const saga = () => (
-    <TechLogo 
-        href='https://redux-saga.js.org/'
-        image={sagaLogo}
-        alt='redux saga logo'
-    />
-) 
-
-
-const css = () => (
-    <TechLogo 
-        href='https://developer.mozilla.org/en-US/docs/Web/CSS'
-        image={cssLogo}
-        alt='css logo'
-    />
-) 
-
-
-const node = () => (
-    <TechLogo 
-        href='https://nodejs.org/en/docs/'
-        image={nodeLogo}
-        alt='node logo'
-    />
-) 
-
-
-const postgres = () => (
-    <TechLogo 
-        href='https://www.postgresql.org/'
-        image={pgLogo}
-        alt='postgres logo'
-    />
-) 
-
+import { html, js, react, redux, saga, css, sass, node, postgres, mongodb, firebase} from '../components/tech-logo/logos.js'
 
 const Homepage = () => {
     return (
@@ -155,6 +41,7 @@ const Homepage = () => {
             <SectionTest 
                 projectName='Inventory View'
                 bgcolor='#ddd' 
+                mobileImage={null}
                 image1={invViewImg} 
                 image2={progressView} 
                 image3={shrinkView} 
@@ -182,6 +69,7 @@ const Homepage = () => {
             <SectionTest 
                 projectName='Lendit Asset Tracking'
                 bgcolor='#ececec' 
+                mobileImage={lenditMobile}
                 image1={lenditSignIn} 
                 image2={lenditHome} 
                 image3={lenditAssets} 
@@ -210,15 +98,15 @@ const Homepage = () => {
             <SectionTest 
                 projectName='Launch Tracking App'
                 bgcolor='#ddd' 
+                mobileImage={launchMobile}
                 image1={launchControlHome} 
                 image2={launchControlUpcoming} 
                 image3={launchControlHistory} 
                 image4={launchControlHome} 
                 tech1={react()} 
-                tech2={saga()} 
-                tech3={node()} 
-                tech4={css()} 
-                tech5={postgres()} 
+                tech2={node()} 
+                tech3={css()} 
+                tech4={postgres()} 
 
 
                 desc1='
@@ -239,6 +127,7 @@ const Homepage = () => {
             <SectionTest 
                 projectName='Mus Shop'
                 bgcolor='#ececec' 
+                mobileImage={proMobile}
                 image1={proShopHome} 
                 image2={proShopProduct} 
                 image3={proShopCheckout} 
@@ -268,6 +157,7 @@ const Homepage = () => {
             <SectionTest 
                 projectName='Crown Shop'
                 bgcolor='#ddd' 
+                mobileImage={null}
                 image1={crwnHome} 
                 image2={crwnShop} 
                 image3={crwnCart} 

@@ -12,12 +12,12 @@
 }
 
 .header-logo {
-  height: 30px;
-  padding-right: 1rem;
+  height: 40px;
+  padding-right: 2rem;
 }
 
 .github-logo {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -25,8 +25,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
-    height: 10vh;
+    align-items: flex-end;
+    height: 5vh;
     position: fixed;
     top: 0;
     background-color: white;
@@ -37,9 +37,5 @@
   .header-logo {
     height: 30px;
     padding-right: 1rem;
-  }
-
-  .github-logo {
-    padding-right: 5.5rem;
   }
 }

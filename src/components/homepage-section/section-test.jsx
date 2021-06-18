@@ -7,11 +7,21 @@ import laptopBase from '../../assets/laptop.png'
 
 import './homepage-section.styles.css'
 
-
 const SectionTest = ({isFooter, bgcolor, projectName, ...props}) => {
+
+    React.useEffect(() => {
+        window.addEventListener("resize", updateWidth);
+        return () => window.removeEventListener("resize", updateWidth);
+    });
+
+    const [width, setWidth] = React.useState(window.innerWidth);
+
+    const updateWidth = () => {
+        setWidth(window.innerWidth);
+      };
+
     return (
-        <div className={`${isFooter ? 'section-test-footer-wrapper' : null } 
-                        section-test-wrapper`} style={{backgroundColor:bgcolor}}>
+        <div className={'section-test-wrapper'} style={{backgroundColor:bgcolor}}>
                     {
             isFooter ? null : (
                 <div className='section-test-text'>
@@ -42,6 +52,9 @@ const SectionTest = ({isFooter, bgcolor, projectName, ...props}) => {
                 </div>
             )
         }
+        {
+            width > 800 ?
+            (
             <div className='laptop-container'>
                 <img className='laptop-frame' src={laptopBase} alt='laptop frame'/>
                 <Carousel 
@@ -60,6 +73,9 @@ const SectionTest = ({isFooter, bgcolor, projectName, ...props}) => {
                     <img className='c-img' src={props.image4} alt={props.alt2} />
                 </Carousel>
             </div>
+            )
+            : <img className='mobile-image' src={props.mobileImage} alt='iphone'/>
+        }
             
         </div>
     )
