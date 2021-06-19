@@ -155,7 +155,7 @@ const Homepage = () => {
                 desc1='
                     The Mus Shop application is a template for an e-commerce platform. 
                     Users can, browse through categories, add items to cart, and make payments.
-                    Users with administrator priviledges are able to add products and remove products or users.
+                    Users with administrator privileges are able to add products and remove products or users.
                     The site is styled using React Bootstrap5 components.  
                     Secure payments to the site are handled using the PayPal API. 
                 '
