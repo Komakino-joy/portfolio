@@ -27,7 +27,7 @@ import proShopCheckout from '../assets/pro-checkout.png'
 import proShopAdmin from '../assets/pro-admin.png'
 
 import crwnMobile from '../assets/mobile-crwn.png'
-import crwnHome from '../assets/crwn-shop.PNG'
+import crwnHome from '../assets/crwn-shop.png'
 import crwnShop from '../assets/shop-page.png'
 import crwnSignIn from '../assets/sign-in-crwn.png'
 import crwnCart from '../assets/crwn-checkout.png'
@@ -46,9 +46,13 @@ const Homepage = () => {
                 bgcolor='#ddd' 
                 mobileImage={invViewMobile}
                 image1={invViewImg} 
+                alt1={'Inventory view site home screen preview'}
                 image2={progressView} 
+                alt2={'Inventory view site dashboard screen preview'}
                 image3={shrinkView} 
+                alt3={'Inventory view site shrink report screen preview'}
                 image4={reportUpload} 
+                alt4={'Inventory view site report upload screen preview'}
                 alt='inventory view project'
                 tech1={react()} 
                 tech2={redux()} 
@@ -71,9 +75,13 @@ const Homepage = () => {
                 bgcolor='#ececec' 
                 mobileImage={lenditMobile}
                 image1={lenditSignIn} 
+                alt1={'Lendit asset tracking site sign in screen preview'}
                 image2={lenditHome} 
+                alt2={'Lendit asset tracking site home screen preview'}
                 image3={lenditAssets} 
+                alt3={'Lendit asset tracking site asset report screen preview'}
                 image4={lenditActivity} 
+                alt4={'Lendit asset tracking site activity tracking screen preview'}
                 alt='laptop with asset tracking app' 
                 tech1={react()} 
                 tech2={saga()} 
@@ -82,10 +90,10 @@ const Homepage = () => {
                 tech5={postgres()} 
 
                 desc1="
-                    The Lendit Asset Tracking application is a simple to use check-in/check-out system that
-                    facilitates asset management. The application solves keeping track of all transactions 
-                    made. Users of the app can pull reports for assets that are available, in use, and
-                    those in quarantine. The historical data of all assets can also be pulled from this app.
+                    The Lendit Asset Tracking application is a user-friendly check-in/check-out system that
+                    facilitates asset management. Users can quickly determine the status of all assets by running the 
+                    built in reports. All transactions are recorded so that historical data for any assets in only a 
+                    few clicks away.
                 "
                 githubRepo='https://github.com/Komakino-joy/lendit'
                 githubRepo2='https://github.com/Komakino-joy/lendit_api'
@@ -99,9 +107,13 @@ const Homepage = () => {
                 bgcolor='#ddd' 
                 mobileImage={launchMobile}
                 image1={launchControlHome} 
+                alt1={'Launch control site home screen preview'}
                 image2={launchControlUpcoming} 
+                alt2={'Launch control site upcoming launches screen preview'}
                 image3={launchControlHistory} 
+                alt3={'Launch control site historical launches screen preview'}
                 image4={launchControlHome} 
+                alt4={'Launch control site home screen preview'}
                 tech1={react()} 
                 tech2={node()} 
                 tech3={css()} 
@@ -111,8 +123,8 @@ const Homepage = () => {
                 desc1="
                     The Launch tracking application is a fun application that parses NASA's publicly 
                     available exoplanet data and determines which are capable of harboring life. Users are
-                    able to schedule launch missions to those particular planets. The app also uses the SpaceX API
-                    to list all planned and historical launches made by SpaceX. This application is not affiliated
+                    able to schedule launch missions to the exoplanets. The app also makes use of the SpaceX API
+                    to list all of SpaceX's planned and historical rocket launches. This application is not affiliated
                     with NASA or SpaceX in any way.  
                 "
                 githubRepo='https://github.com/Komakino-joy/NASA-PROJECT'
@@ -126,9 +138,13 @@ const Homepage = () => {
                 bgcolor='#ececec' 
                 mobileImage={proMobile}
                 image1={proShopHome} 
+                alt1={'Pro Shop site home screen preview'}
                 image2={proShopProduct} 
+                alt2={'Pro Shop site product screen preview'}
                 image3={proShopCheckout} 
+                alt3={'Pro Shop site checkout screen preview'}
                 image4={proShopAdmin} 
+                alt4={'Pro Shop site admin screen preview'}
                 tech1={react()} 
                 tech2={redux()} 
                 tech3={node()} 
@@ -138,11 +154,10 @@ const Homepage = () => {
 
                 desc1='
                     The Mus Shop application is a template for an e-commerce platform. 
-                    User functionalities include: browsing through categories; adding items to cart; and processing payments.
-                    Admin functionalities include: adding products; removing products and users.
-                    All styles are made using React Bootstrap5 components.  
-                    The app utilizes the PayPal API to handle and process secure payments from the customer. Shop data 
-                    and user credentials are stored in MongoDB and user authentication is handled with Node js.
+                    Users can, browse through categories, add items to cart, and make payments.
+                    Users with administrator priviledges are able to add products and remove products or users.
+                    The site is styled using React Bootstrap5 components.  
+                    Secure payments to the site are handled using the PayPal API. 
                 '
                 githubRepo='https://github.com/Komakino-joy/ProShop'
 
@@ -155,9 +170,13 @@ const Homepage = () => {
                 bgcolor='#ddd' 
                 mobileImage={crwnMobile}
                 image1={crwnHome} 
+                alt1={'Crown site home screen preview'}
                 image2={crwnShop} 
+                alt2={'Crown site shop screen preview'}
                 image3={crwnCart} 
+                alt3={'Crown site cart screen preview'}
                 image4={crwnSignIn} 
+                alt4={'Crown site sign in screen preview'}
                 tech1={react()} 
                 tech2={saga()} 
                 tech3={sass()} 
@@ -166,9 +185,9 @@ const Homepage = () => {
 
                 desc1="
                     The CRWN shop application is a template for an e-commerce platform. 
-                    Functionalities include: browsing through categories; adding items to cart; and processing payments.
-                    The app utilizes the Stripe API to handle and process secure payments from the customer. Shop data 
-                    and user credentials are stored in Google Cloud Firestore and 
+                    Users are able to browse through categories, add items to their cart, and make payments.
+                    This app features Stripe integration to handle and process secure payments from the customer. 
+                    Shop data and user credentials are stored in Google Cloud Firestore and 
                     user authentication is handled by Google as well.
                 "
                 githubRepo='https://github.com/Komakino-joy/mus/tree/master/client'

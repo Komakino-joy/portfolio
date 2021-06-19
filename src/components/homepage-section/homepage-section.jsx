@@ -87,8 +87,8 @@ const Section = ({isFooter, bgcolor, projectName, ...props}) => {
 
                     <img className='c-img' src={props.image1} alt={props.alt1} />
                     <img className='c-img' src={props.image2} alt={props.alt2} />
-                    <img className='c-img' src={props.image3} alt={props.alt2} />
-                    <img className='c-img' src={props.image4} alt={props.alt2} />
+                    <img className='c-img' src={props.image3} alt={props.alt3} />
+                    <img className='c-img' src={props.image4} alt={props.alt4} />
                 </Carousel>
             </div>
             )

@@ -1,5 +1,6 @@
 .tech-logo {
   height: 50px;
+  width: auto;
 }
 
 @media screen and (max-width: 800px) {
