@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.08143973.chunk.css",
-    "main.js": "/portfolio/static/js/main.724179b8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.724179b8.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.163e8bd9.chunk.css",
+    "main.js": "/portfolio/static/js/main.81e86b7e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.81e86b7e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.1c8344b7.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.1c8344b7.js.map",
     "static/css/2.6b560088.chunk.css": "/portfolio/static/css/2.6b560088.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.03b57c04.chunk.js.map": "/portfolio/static/js/3.03b57c04.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.6b560088.chunk.css.map": "/portfolio/static/css/2.6b560088.chunk.css.map",
-    "static/css/main.08143973.chunk.css.map": "/portfolio/static/css/main.08143973.chunk.css.map",
+    "static/css/main.163e8bd9.chunk.css.map": "/portfolio/static/css/main.163e8bd9.chunk.css.map",
     "static/js/2.27aa97c4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.27aa97c4.chunk.js.LICENSE.txt",
     "static/media/activity-tracking.f6cf295f.png": "/portfolio/static/media/activity-tracking.f6cf295f.png",
     "static/media/assets-in-use.7185855a.png": "/portfolio/static/media/assets-in-use.7185855a.png",
     "static/media/banner.514c3be5.svg": "/portfolio/static/media/banner.514c3be5.svg",
     "static/media/bootstrap-5.98585727.svg": "/portfolio/static/media/bootstrap-5.98585727.svg",
     "static/media/crwn-checkout.48f2ea25.png": "/portfolio/static/media/crwn-checkout.48f2ea25.png",
-    "static/media/crwn-shop.365186c9.PNG": "/portfolio/static/media/crwn-shop.365186c9.PNG",
+    "static/media/crwn-shop.365186c9.png": "/portfolio/static/media/crwn-shop.365186c9.png",
     "static/media/css3.logo.bcb1847c.svg": "/portfolio/static/media/css3.logo.bcb1847c.svg",
     "static/media/firebase.logo.0119b0c6.svg": "/portfolio/static/media/firebase.logo.0119b0c6.svg",
     "static/media/github.logo.09f5b9f9.svg": "/portfolio/static/media/github.logo.09f5b9f9.svg",
@@ -61,7 +61,7 @@
     "static/js/runtime-main.1c8344b7.js",
     "static/css/2.6b560088.chunk.css",
     "static/js/2.27aa97c4.chunk.js",
-    "static/css/main.08143973.chunk.css",
-    "static/js/main.724179b8.chunk.js"
+    "static/css/main.163e8bd9.chunk.css",
+    "static/js/main.81e86b7e.chunk.js"
   ]
 }
