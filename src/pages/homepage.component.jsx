@@ -109,7 +109,7 @@ const Homepage = () => {
                 />
             <Section 
                 projectName='Music Player'
-                bgcolor='#ddd' 
+                bgcolor='#ececec' 
                 mobileImage={musicMobile}
                 image1={musicHome} 
                 alt1={'Music Home screen preview'}
