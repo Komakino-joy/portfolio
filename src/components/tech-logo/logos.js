@@ -12,9 +12,19 @@ import nodeLogo from '../../assets/nodejs.logo.svg'
 import vueLogo from '../../assets/vue.logo.svg'
 import styledLogo from '../../assets/styled-components.png'
 import bootstrapLogo from '../../assets/bootstrap-5.svg'
+import tailwindLogo from '../../assets/tailwindcss.svg'
 
 
 import TechLogo from './tech-logo.component'
+
+export const tailwind = () => (
+    <TechLogo 
+        href='https://tailwindcss.com/'
+        image={tailwindLogo}
+        alt='tailwind css logo'
+        title='Tailwind CSS'
+    />
+)
 
 export const bootstrap = () => (
     <TechLogo 

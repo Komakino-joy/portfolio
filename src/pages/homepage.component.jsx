@@ -15,6 +15,12 @@ import lenditHome from '../assets/lendit-home.png'
 import lenditAssets from '../assets/assets-in-use.png'
 import lenditActivity from '../assets/activity-tracking.png'
 
+import musicMobile from '../assets/mobile-vue-music.png'
+import musicHome from '../assets/vue-music-home.png'
+import musicSong from '../assets/vue-music-song-page.png'
+import musicRegister from '../assets/vue-music-register.png'
+import musicSignIn from '../assets/vue-music-sign-in.png'
+
 import launchMobile from '../assets/mobile-launch-app.png'
 import launchControlHome from '../assets/launch-schedule-home.png'
 import launchControlUpcoming from '../assets/launch-schedule-upcoming.png'
@@ -33,7 +39,7 @@ import crwnSignIn from '../assets/sign-in-crwn.png'
 import crwnCart from '../assets/crwn-checkout.png'
 
 import { 
-    html, js, react, redux, saga, css, sass, bootstrap, 
+    html, js, vue, react, redux, saga, css, sass, tailwind, bootstrap, 
     styled, node, postgres, mongodb, firebase} from '../components/tech-logo/logos.js'
 
 const Homepage = () => {
@@ -99,6 +105,35 @@ const Homepage = () => {
                 githubRepo2='https://github.com/Komakino-joy/lendit_api'
 
                 liveDemo='https://lendit-asset-tracker.herokuapp.com/home'
+    
+                />
+            <Section 
+                projectName='Music Player'
+                bgcolor='#ddd' 
+                mobileImage={musicMobile}
+                image1={musicHome} 
+                alt1={'Music Home screen preview'}
+                image2={musicSong} 
+                alt2={'Music Song screen preview'}
+                image3={musicSignIn} 
+                alt3={'Music SignIn screen preview'}
+                image4={musicRegister} 
+                alt4={'Music Register screen preview'}
+                tech1={vue()} 
+                tech2={tailwind()} 
+                tech3={firebase()} 
+
+
+                desc1="
+                    The music player application is a straight-forward,  
+                    distraction-free music streaming application. Users can browse through
+                    the site and enjoy the songs uploaded by others. They are also given the 
+                    option to register an account and flex their own creative muscle by uploading music for other music
+                    enthusiasts to enjoy and comment on. 
+                "
+                githubRepo='https://github.com/Komakino-joy/vue-music'
+
+                liveDemo='https://vue-music-omega.vercel.app/'
     
                 />
 
