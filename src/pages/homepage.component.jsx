@@ -109,7 +109,7 @@ const Homepage = () => {
                 />
             <Section 
                 projectName='Music Player'
-                bgcolor='#ececec' 
+                bgcolor='#ddd' 
                 mobileImage={musicMobile}
                 image1={musicHome} 
                 alt1={'Music Home screen preview'}
@@ -139,7 +139,7 @@ const Homepage = () => {
 
             <Section 
                 projectName='Launch Tracking App'
-                bgcolor='#ddd' 
+                bgcolor='#ececec' 
                 mobileImage={launchMobile}
                 image1={launchControlHome} 
                 alt1={'Launch control site home screen preview'}
@@ -170,7 +170,7 @@ const Homepage = () => {
 
             <Section 
                 projectName='Mus Shop'
-                bgcolor='#ececec' 
+                bgcolor='#ddd' 
                 mobileImage={proMobile}
                 image1={proShopHome} 
                 alt1={'Pro Shop site home screen preview'}
@@ -202,7 +202,7 @@ const Homepage = () => {
 
             <Section 
                 projectName='Crown Shop'
-                bgcolor='#ddd' 
+                bgcolor='#ececec' 
                 mobileImage={crwnMobile}
                 image1={crwnHome} 
                 alt1={'Crown site home screen preview'}
