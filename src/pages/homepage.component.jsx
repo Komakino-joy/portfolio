@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Banner from '../components/banner/banner.component'
+import Bio from '../components/bio/bio.component'
 import Section from '../components/homepage-section/homepage-section'
 
 import invViewMobile from '../assets/mobile-inv-view.png'
@@ -46,34 +47,34 @@ const Homepage = () => {
     return (
         <>
             <Banner/>
-
-            <Section 
-                projectName='Inventory View'
-                bgcolor='#ddd' 
-                mobileImage={invViewMobile}
-                image1={invViewImg} 
-                alt1={'Inventory view site home screen preview'}
-                image2={progressView} 
-                alt2={'Inventory view site dashboard screen preview'}
-                image3={shrinkView} 
-                alt3={'Inventory view site shrink report screen preview'}
-                image4={reportUpload} 
-                alt4={'Inventory view site report upload screen preview'}
-                alt='inventory view project'
-                tech1={react()} 
-                tech2={redux()} 
-                tech3={saga()}
-                tech4={css()} 
-                tech5={node()}
-                tech6={postgres()} 
-                desc1='
-                    The Inventory View application is an elegant overview of inventory in a large scale logistics
-                    environment. The app displays important inventory metrics. Users can upload large excel spreadsheets
-                    containing hundreds of thousands of rows in an asynchronous non-blocking manner so that their 
-                    browsing experience will not be interrupted while the data finishes uploading. 
-                '
-                githubRepo='https://github.com/Komakino-joy/inv_view_v3'
-                
+            <Bio/>
+                <Section 
+                    projectName='Inventory View'
+                    bgcolor='#ddd' 
+                    mobileImage={invViewMobile}
+                    image1={invViewImg} 
+                    alt1={'Inventory view site home screen preview'}
+                    image2={progressView} 
+                    alt2={'Inventory view site dashboard screen preview'}
+                    image3={shrinkView} 
+                    alt3={'Inventory view site shrink report screen preview'}
+                    image4={reportUpload} 
+                    alt4={'Inventory view site report upload screen preview'}
+                    alt='inventory view project'
+                    tech1={react()} 
+                    tech2={redux()} 
+                    tech3={saga()}
+                    tech4={css()} 
+                    tech5={node()}
+                    tech6={postgres()} 
+                    desc1='
+                        The Inventory View application is an elegant overview of inventory in a large scale logistics
+                        environment. The app displays important inventory metrics. Users can upload large excel spreadsheets
+                        containing hundreds of thousands of rows in an asynchronous non-blocking manner so that their 
+                        browsing experience will not be interrupted while the data finishes uploading. 
+                    '
+                    githubRepo='https://github.com/Komakino-joy/inv_view_v3'
+                    
                 />
 
             <Section 

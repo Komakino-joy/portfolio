@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: white;
 }
 
 .laptop-logo {
@@ -29,6 +30,6 @@
 @media screen and (max-width: 800px) {
   .banner-wrapper {
     height: 100vh;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 }

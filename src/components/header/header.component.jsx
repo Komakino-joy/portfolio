@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
+import classnames from "classnames";
 
 import linkedIn from '../../assets/linkedin.logo.svg'
 import gitHub from '../../assets/github.logo.svg'
@@ -6,8 +7,33 @@ import gitHub from '../../assets/github.logo.svg'
 import './header.styles.css'
 
 const Header = () => {
+
+    const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
+    const [visible, setVisible] = useState(true)
+
+    const handleScroll = useCallback(
+        () => {
+            const currentScrollPos = window.pageYOffset;
+            const visible = prevScrollpos > currentScrollPos;
+            
+            setPrevScrollpos(currentScrollPos);
+            setVisible(visible);
+        },
+        [prevScrollpos],
+    )
+    
+    useEffect(() => {
+            window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
+    }, [handleScroll])
+
+
     return (
-        <div className='site-header'> 
+        <div         className={classnames("site-header", {
+            "header--hidden": !visible
+          })}> 
             <a href='https://github.com/Komakino-joy' target='_blank' rel="noreferrer">
                 <img className='header-logo github-logo' src={gitHub} alt='github logo'/>
             </a> 
