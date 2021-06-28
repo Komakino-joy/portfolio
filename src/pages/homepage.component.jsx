@@ -3,6 +3,7 @@ import React from 'react'
 import Banner from '../components/banner/banner.component'
 import Bio from '../components/bio/bio.component'
 import Section from '../components/homepage-section/homepage-section'
+import LogoCloud from '../components//logo-cloud/logo-cloud.component'
 
 import invViewMobile from '../assets/mobile-inv-view.png'
 import invViewImg from '../assets/inv-view-cropped.png'
@@ -240,6 +241,7 @@ const Homepage = () => {
                 liveDemo='https://mus-shop.herokuapp.com/'
     
             />
+            <LogoCloud/>
         </>
     )
 }
