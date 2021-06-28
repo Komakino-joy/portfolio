@@ -12,6 +12,7 @@ const Header = () => {
 
     const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
     const [visible, setVisible] = useState(true)
+    
 
     const handleScroll = useCallback(
         () => {
@@ -31,14 +32,10 @@ const Header = () => {
         }
     }, [handleScroll])
 
-
     return (
         <>
-        <div className={classnames("site-header", {
-            "header--hidden": !visible
-          })}> 
-        <BurgerMenu/>
-            
+        <div className={!visible ? 'site-header header--hidden' : 'site-header'}> 
+        <BurgerMenu />
             <a href='https://github.com/Komakino-joy' target='_blank' rel="noreferrer">
                 <img className='header-logo github-logo' src={gitHub} alt='github logo'/>
             </a> 
@@ -46,6 +43,7 @@ const Header = () => {
                 <img className='header-logo' src={linkedIn} alt='linked in logo'/>
             </a> 
         </div>
+        
         </>
     )
 }

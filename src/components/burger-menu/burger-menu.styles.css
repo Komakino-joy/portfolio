@@ -20,7 +20,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #ffffff;
 }
 
 /*
@@ -30,15 +30,14 @@
 .bm-menu-wrap {
   position: absolute !important;
   top: 0 !important;
-  height: 100vh !important;
+  height: 150vh !important;
   position: fixed;
-  height: 100vh;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  height: 100vh;
-  background: #868d99;
+  overflow: hidden !important;
+  background: #949eb1;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -50,22 +49,31 @@
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  padding-left: 2rem;
+}
+
+.menu-icon {
+  padding-right: 12px;
 }
 
 /* Individual item */
 .bm-item {
+  color: #ffffff;
   display: inline-block;
   cursor: pointer;
-  color: white;
   font-family: 'Raleway', sans-serif;
+  margin-top: 1.5rem;
+}
+
+.bm-item:hover {
+  color: #b8b7ad;
 }
 
 /* Styling of overlay */
 .bm-overlay {
   position: absolute !important;
   top: 0 !important;
-  height: 100vh !important;
+  height: 150vh !important;
   background: rgba(0, 0, 0, 0.3);
 }
 
