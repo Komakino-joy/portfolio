@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import BurgerMenu from '../burger-menu/burger-menu.component'
 
-import classnames from "classnames";
-
 import linkedIn from '../../assets/linkedin.logo.svg'
 import gitHub from '../../assets/github.logo.svg'
 

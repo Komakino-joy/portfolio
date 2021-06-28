@@ -13,9 +13,74 @@ import vueLogo from '../../assets/vue.logo.svg'
 import styledLogo from '../../assets/styled-components.png'
 import bootstrapLogo from '../../assets/bootstrap-5.svg'
 import tailwindLogo from '../../assets/tailwindcss.svg'
+import oracleLogo from '../../assets/oracle.svg'
+import postmanLogo from '../../assets/postman.svg'
+import photoshopLogo from '../../assets/photoshop.svg'
+import appleLogo from '../../assets/apple.svg'
+import windowsLogo from '../../assets/microsoft-windows.svg'
+import pythonLogo from '../../assets/python.svg'
 
 
 import TechLogo from './tech-logo.component'
+
+
+export const python = () => (
+    <TechLogo 
+        href='https://www.python.org/'
+        image={pythonLogo}
+        alt='python logo'
+        title='Python'
+    />
+)
+
+
+
+export const windows = () => (
+    <TechLogo 
+        href='https://www.microsoft.com/en-us/windows'
+        image={windowsLogo}
+        alt='microsoft windows logo'
+        title='Windows OS'
+    />
+)
+
+
+export const apple = () => (
+    <TechLogo 
+        href='https://www.apple.com/'
+        image={appleLogo}
+        alt='apple logo'
+        title='Mac OS'
+    />
+)
+
+export const photoshop = () => (
+    <TechLogo 
+        href='https://www.adobe.com/products/photoshop/landpa.html?sdid=KKQIN&mv=search&kw=photoshop&ef_id=Cj0KCQjw5uWGBhCTARIsAL70sLKUyyPpcytM4vWgr5k0zdX3ktlh0UW5fBVMRPW0jNanNhttps://www.apple.com/:G:s&s_kwcid=AL!3085!3!522507805137!e!!g!!photoshop!1712238394!67643541820&gclid=Cj0KCQjw5uWGBhCTARIsAL70sLKUyyPpcytM4vWgr5k0zdX3ktlh0UW5fBVMRPW0jNanNhttps://www.apple.com/'
+        image={photoshopLogo}
+        alt='photoshop logo'
+        title='Photoshop'
+    />
+)
+
+export const oracle = () => (
+    <TechLogo 
+        href='https://www.oracle.com/database/'
+        image={oracleLogo}
+        alt='oracle database logo'
+        title='Oracle DB'
+    />
+)
+
+export const postman = () => (
+    <TechLogo 
+        href='https://www.postman.com/'
+        image={postmanLogo}
+        alt='postman logo'
+        title='Postman'
+    />
+)
+
 
 export const tailwind = () => (
     <TechLogo 

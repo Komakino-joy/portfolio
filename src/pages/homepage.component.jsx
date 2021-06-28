@@ -3,7 +3,6 @@ import React from 'react'
 import Banner from '../components/banner/banner.component'
 import Bio from '../components/bio/bio.component'
 import Section from '../components/homepage-section/homepage-section'
-import LogoCloud from '../components//logo-cloud/logo-cloud.component'
 
 import invViewMobile from '../assets/mobile-inv-view.png'
 import invViewImg from '../assets/inv-view-cropped.png'
@@ -44,7 +43,7 @@ import {
     html, js, vue, react, redux, saga, css, sass, tailwind, bootstrap, 
     styled, node, postgres, mongodb, firebase} from '../components/tech-logo/logos.js'
 
-import './homepage.styles.css'
+import '../App.css'
 
 const Homepage = () => {
     return (
@@ -55,8 +54,8 @@ const Homepage = () => {
             <Bio/>
             {/* Project Header will only render in mobile view */}
             <section  id={'projects-section'}></section>
-            <div className='projects-header-container' >
-                <h1 className='projects-header'>Projects</h1>
+            <div className='mobile-section-header-container' >
+                <h1 className='mobile-section-header'>Projects</h1>
             </div>
             <Section 
                 projectName='Inventory View'
@@ -241,7 +240,7 @@ const Homepage = () => {
                 liveDemo='https://mus-shop.herokuapp.com/'
     
             />
-            <LogoCloud/>
+           
         </>
     )
 }

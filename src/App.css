@@ -1,0 +1,18 @@
+.mobile-section-header-container {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-section-header-container {
+    display: unset;
+  }
+  .mobile-section-header {
+    color: white;
+    background: rgba(65, 118, 196, 0.685);
+    letter-spacing: 1.2px;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 2px;
+    line-height: 80px;
+  }
+}

@@ -1,6 +1,12 @@
 .tech-logo {
   height: 50px;
   width: auto;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tech-logo:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 800px) {

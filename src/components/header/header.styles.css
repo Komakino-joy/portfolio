@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 6vh;
+  height: 10vh;
   position: fixed;
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
@@ -30,7 +30,7 @@
 @media screen and (max-width: 800px) {
   .site-header {
     align-items: flex-end;
-    height: 40px;
+    height: 70px;
   }
 
   .header-logo {
@@ -38,6 +38,6 @@
   }
 
   .github-logo {
-    right: 65px;
+    right: 60px;
   }
 }
