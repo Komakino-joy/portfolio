@@ -34,10 +34,10 @@ const Header = () => {
 
     return (
         <>
-        <BurgerMenu/>
         <div className={classnames("site-header", {
             "header--hidden": !visible
           })}> 
+        <BurgerMenu/>
             
             <a href='https://github.com/Komakino-joy' target='_blank' rel="noreferrer">
                 <img className='header-logo github-logo' src={gitHub} alt='github logo'/>

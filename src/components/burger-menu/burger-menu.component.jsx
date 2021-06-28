@@ -8,16 +8,11 @@ const BurgerMenu = () => {
 
     const [open, setOpen] = useState(false)
 
-    const toggleNav = () => {
-        setOpen(false);
-    }
-
     return (
         <>
             <Menu isOpen={ open }>
                 <Link 
                     onClick={setOpen}
-                    className='menu-item' 
                     activeClass="active" 
                     to="about-section" 
                     spy={true} 
@@ -27,7 +22,6 @@ const BurgerMenu = () => {
                 </Link>
                 <Link 
                     onClick={setOpen}
-                    className='menu-item' 
                     activeClass="active" 
                     to="projects-section" 
                     spy={true} 
@@ -37,7 +31,6 @@ const BurgerMenu = () => {
                 </Link>
                 <Link 
                     onClick={setOpen}
-                    className='menu-item' 
                     activeClass="active" 
                     to="skills-section" 
                     spy={true} 
