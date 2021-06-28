@@ -117,10 +117,10 @@ const Section = ({isFooter, bgcolor, projectName, ...props}) => {
                                     </a>
                                     {props.liveDemo ?
                                         <>
-                                            (<h4 className='section-title'>Live Demonstration</h4>
+                                            <h4 className='section-title'>Live Demonstration</h4>
                                             <a href={props.liveDemo}>
                                                 <p className='section-link'> {props.liveDemo} </p>
-                                            </a>)
+                                            </a>
                                         </>
                                     : null
                                     }

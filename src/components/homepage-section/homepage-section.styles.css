@@ -165,6 +165,10 @@ ul {
     letter-spacing: 0.5px;
   }
 
+  .section-link {
+    font-size: 18px;
+  }
+
   .section-detail {
     font-size: 15px;
     line-height: 25px;
