@@ -8,8 +8,9 @@
 }
 
 .laptop-logo {
-  height: 100px;
-  width: auto;
+  font-size: 150px;
+  color: #333333;
+  margin-bottom: -20px;
 }
 
 .banner-header {

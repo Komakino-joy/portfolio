@@ -43,39 +43,48 @@ import {
     html, js, vue, react, redux, saga, css, sass, tailwind, bootstrap, 
     styled, node, postgres, mongodb, firebase} from '../components/tech-logo/logos.js'
 
+import './homepage.styles.css'
+
 const Homepage = () => {
     return (
         <>
-            <Banner/>
+         <Banner/> 
+
+            <section  id={'about-section'}></section>
             <Bio/>
-                <Section 
-                    projectName='Inventory View'
-                    bgcolor='#ddd' 
-                    mobileImage={invViewMobile}
-                    image1={invViewImg} 
-                    alt1={'Inventory view site home screen preview'}
-                    image2={progressView} 
-                    alt2={'Inventory view site dashboard screen preview'}
-                    image3={shrinkView} 
-                    alt3={'Inventory view site shrink report screen preview'}
-                    image4={reportUpload} 
-                    alt4={'Inventory view site report upload screen preview'}
-                    alt='inventory view project'
-                    tech1={react()} 
-                    tech2={redux()} 
-                    tech3={saga()}
-                    tech4={css()} 
-                    tech5={node()}
-                    tech6={postgres()} 
-                    desc1='
-                        The Inventory View application is an elegant overview of inventory in a large scale logistics
-                        environment. The app displays important inventory metrics. Users can upload large excel spreadsheets
-                        containing hundreds of thousands of rows in an asynchronous non-blocking manner so that their 
-                        browsing experience will not be interrupted while the data finishes uploading. 
-                    '
-                    githubRepo='https://github.com/Komakino-joy/inv_view_v3'
-                    
-                />
+            {/* Project Header will only render in mobile view */}
+            <section  id={'projects-section'}></section>
+            <div className='projects-header-container' >
+                <h1 className='projects-header'>Projects</h1>
+            </div>
+            <Section 
+                projectName='Inventory View'
+                bgcolor='#ddd' 
+                mobileImage={invViewMobile}
+                image1={invViewImg} 
+                alt1={'Inventory view site home screen preview'}
+                image2={progressView} 
+                alt2={'Inventory view site dashboard screen preview'}
+                image3={shrinkView} 
+                alt3={'Inventory view site shrink report screen preview'}
+                image4={reportUpload} 
+                alt4={'Inventory view site report upload screen preview'}
+                alt='inventory view project'
+                tech1={react()} 
+                tech2={redux()} 
+                tech3={saga()}
+                tech4={css()} 
+                tech5={node()}
+                tech6={postgres()} 
+                desc1='
+                    The Inventory View application is an elegant overview of inventory in a large scale logistics
+                    environment. The app displays important inventory metrics. Users can upload large excel spreadsheets
+                    containing hundreds of thousands of rows in an asynchronous non-blocking manner so that their 
+                    browsing experience will not be interrupted while the data finishes uploading. 
+                '
+                githubRepo='https://github.com/Komakino-joy/inv_view_v3'
+                
+            />
 
             <Section 
                 projectName='Lendit Asset Tracking'
@@ -198,7 +207,7 @@ const Homepage = () => {
                 githubRepo='https://github.com/Komakino-joy/ProShop'
 
                 liveDemo='https://app-mus-shop.herokuapp.com/'
-    
+
             />
 
             <Section 
@@ -231,7 +240,6 @@ const Homepage = () => {
                 liveDemo='https://mus-shop.herokuapp.com/'
     
             />
-
         </>
     )
 }

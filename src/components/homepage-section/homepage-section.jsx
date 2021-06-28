@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect,  useState } from 'react'
 import {
     Accordion,
     AccordionItem,
@@ -16,16 +16,22 @@ import './homepage-section.styles.css'
 
 const Section = ({isFooter, bgcolor, projectName, ...props}) => {
 
-    React.useEffect(() => {
+    useEffect(() => {
         window.addEventListener("resize", updateWidth);
         return () => window.removeEventListener("resize", updateWidth);
     });
 
-    const [width, setWidth] = React.useState(window.innerWidth);
+    const [width, setWidth] = useState(window.innerWidth);
+    const [isExpanded, setIsExpanded] = useState(false);
 
     const updateWidth = () => {
         setWidth(window.innerWidth);
       };
+
+
+    const expandSection = () => {
+        setIsExpanded(!isExpanded);
+    };  
 
     return (
         <>
@@ -84,14 +90,18 @@ const Section = ({isFooter, bgcolor, projectName, ...props}) => {
                         </div>
                     </div>
                 ) : (
-                <Accordion allowZeroExpanded >
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>
+                
+                <Accordion allowZeroExpanded className='accordion'>
+                    <AccordionItem className='accordion-item'>
+                        
+                        <AccordionItemHeading className='accordion-item-heading' onClick={expandSection}>
+                            <AccordionItemButton className='accordion-item-button'>
+                            {/* <i class="fas fa-chevron-right dropdown-icon"></i> */}
+                            <i class={ !isExpanded ?  'fas fa-angle-right dropdown-icon' : 'fas fa-angle-down dropdown-icon' }></i>
                                 {projectName}
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel>
+                        <AccordionItemPanel className='accordion-item-panel'>
                             <div className='section-wrapper' style={{backgroundColor:bgcolor}}>
                                 <div className='section-text'>
                                     <h3 className='section-header'>{projectName}</h3>
@@ -131,6 +141,7 @@ const Section = ({isFooter, bgcolor, projectName, ...props}) => {
                         </AccordionItemPanel>
                     </AccordionItem>
                 </Accordion>
+
             )}
         </>
     )
