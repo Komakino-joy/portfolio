@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b323620.chunk.css",
-    "main.js": "/static/js/main.10ce61c6.chunk.js",
-    "main.js.map": "/static/js/main.10ce61c6.chunk.js.map",
+    "main.css": "/static/css/main.9be9878e.chunk.css",
+    "main.js": "/static/js/main.e4d1256f.chunk.js",
+    "main.js.map": "/static/js/main.e4d1256f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8be97c0f.js",
     "runtime-main.js.map": "/static/js/runtime-main.8be97c0f.js.map",
     "static/css/2.6b560088.chunk.css": "/static/css/2.6b560088.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.0d6ac71f.chunk.js.map": "/static/js/3.0d6ac71f.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.6b560088.chunk.css.map": "/static/css/2.6b560088.chunk.css.map",
-    "static/css/main.8b323620.chunk.css.map": "/static/css/main.8b323620.chunk.css.map",
+    "static/css/main.9be9878e.chunk.css.map": "/static/css/main.9be9878e.chunk.css.map",
     "static/js/2.97ee1223.chunk.js.LICENSE.txt": "/static/js/2.97ee1223.chunk.js.LICENSE.txt",
     "static/media/activity-tracking.f6cf295f.png": "/static/media/activity-tracking.f6cf295f.png",
     "static/media/apple.6e8e42e3.svg": "/static/media/apple.6e8e42e3.svg",
@@ -42,17 +42,17 @@
     "static/media/mongodb.logo.99ebc35b.svg": "/static/media/mongodb.logo.99ebc35b.svg",
     "static/media/nodejs.logo.771bc44c.svg": "/static/media/nodejs.logo.771bc44c.svg",
     "static/media/oracle.ef2367bc.svg": "/static/media/oracle.ef2367bc.svg",
-    "static/media/person-coding.a627f4ba.svg": "/static/media/person-coding.a627f4ba.svg",
+    "static/media/person-coding.9f92b730.svg": "/static/media/person-coding.9f92b730.svg",
     "static/media/photoshop.9577db53.svg": "/static/media/photoshop.9577db53.svg",
     "static/media/postgres.logo.2e239eea.svg": "/static/media/postgres.logo.2e239eea.svg",
-    "static/media/postman.552ea9d4.svg": "/static/media/postman.552ea9d4.svg",
+    "static/media/postman.42aa7b38.svg": "/static/media/postman.42aa7b38.svg",
     "static/media/pro-admin.d21492f7.png": "/static/media/pro-admin.d21492f7.png",
     "static/media/pro-cam.44c1c0ea.png": "/static/media/pro-cam.44c1c0ea.png",
     "static/media/pro-checkout.a00e93f8.png": "/static/media/pro-checkout.a00e93f8.png",
     "static/media/pro-home.2475ff0f.png": "/static/media/pro-home.2475ff0f.png",
     "static/media/profile-image.0c11795e.png": "/static/media/profile-image.0c11795e.png",
     "static/media/progress_view.42bd78cb.PNG": "/static/media/progress_view.42bd78cb.PNG",
-    "static/media/python.063da199.svg": "/static/media/python.063da199.svg",
+    "static/media/python.0c6e0424.svg": "/static/media/python.0c6e0424.svg",
     "static/media/react.logo.2d2f31f4.svg": "/static/media/react.logo.2d2f31f4.svg",
     "static/media/redux-saga.logo.7020de63.svg": "/static/media/redux-saga.logo.7020de63.svg",
     "static/media/redux.logo.dccfd416.svg": "/static/media/redux.logo.dccfd416.svg",
@@ -73,7 +73,7 @@
     "static/js/runtime-main.8be97c0f.js",
     "static/css/2.6b560088.chunk.css",
     "static/js/2.97ee1223.chunk.js",
-    "static/css/main.8b323620.chunk.css",
-    "static/js/main.10ce61c6.chunk.js"
+    "static/css/main.9be9878e.chunk.css",
+    "static/js/main.e4d1256f.chunk.js"
   ]
 }
