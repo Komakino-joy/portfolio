@@ -15,10 +15,18 @@ const Header = () => {
     const handleScroll = useCallback(
         () => {
             const currentScrollPos = window.pageYOffset;
-            const visible = prevScrollpos > currentScrollPos;
-            
+            const topOfPage = window.pageYOffset === 0;
+            const bottomOfPage = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+            const userScrolledUp = prevScrollpos > currentScrollPos && currentScrollPos !== 0;
             setPrevScrollpos(currentScrollPos);
-            setVisible(visible);
+            
+            if ( !userScrolledUp || bottomOfPage ) {
+                setVisible(false);
+            } 
+            if ( userScrolledUp || topOfPage) {
+                setVisible(true);
+            }
+
         },
         [prevScrollpos],
     )

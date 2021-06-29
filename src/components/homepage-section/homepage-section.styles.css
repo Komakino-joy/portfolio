@@ -28,7 +28,7 @@ a:hover {
 }
 
 .section-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2vw;
   letter-spacing: 0.5px;
   color: rgb(53, 53, 53);
@@ -37,7 +37,7 @@ a:hover {
 
 .section-title,
 .github-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2vw;
   letter-spacing: 0.5px;
   color: rgb(75, 75, 75);
@@ -49,7 +49,7 @@ a:hover {
 }
 
 .section-detail {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1vw;
   line-height: 2.1vw;
   letter-spacing: 0.875px;
@@ -127,18 +127,6 @@ ul {
 
   .dropdown-icon {
     margin: 0px 10px;
-  }
-
-  .accordion-heading {
-    background: lightseagreen;
-  }
-
-  .accordion-button {
-    background: lightskyblue;
-  }
-
-  .accordion-panel {
-    background: lime;
   }
 
   .section-wrapper {
