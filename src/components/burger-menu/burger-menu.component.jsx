@@ -18,7 +18,7 @@ const BurgerMenu = () => {
                     spy={true} 
                     smooth={true} 
                     duration={500}>
-                    <i class="fas fa-address-card menu-icon"/>ABOUT
+                    <i className="fas fa-address-card menu-icon"/>ABOUT
                 </Link>
                 <Link 
                     onClick={setOpen}
@@ -27,7 +27,7 @@ const BurgerMenu = () => {
                     spy={true} 
                     smooth={true} 
                     duration={500}>
-                    <i class="fas fa-tools menu-icon"></i>PROJECTS
+                    <i className="fas fa-tools menu-icon"></i>PROJECTS
                 </Link>
                 <Link 
                     onClick={setOpen}
@@ -36,7 +36,7 @@ const BurgerMenu = () => {
                     spy={true} 
                     smooth={true} 
                     duration={500}>
-                    <i class="fas fa-toolbox menu-icon"></i>SKILLS
+                    <i className="fas fa-toolbox menu-icon"></i>SKILLS
                 </Link>
             </Menu>
         </>

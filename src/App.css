@@ -1,3 +1,11 @@
+.homepage-wrapper > div:nth-child(odd) {
+  background: #ddd;
+}
+
+.homepage-wrapper > div:nth-child(even) {
+  background: #ececec;
+}
+
 .mobile-section-header-container {
   display: none;
 }

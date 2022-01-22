@@ -33,8 +33,6 @@ export const python = () => (
     />
 )
 
-
-
 export const windows = () => (
     <TechLogo 
         href='https://www.microsoft.com/en-us/windows'
@@ -153,7 +151,6 @@ export const mongodb = () => (
         title='MongoDB'
     />
 ) 
-
 
 export const vue = () => (
     <TechLogo 

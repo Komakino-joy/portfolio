@@ -15,11 +15,10 @@ const LogoCloud = () => {
     const logoList = [
         html(),  js(), css(), vue(),  redux(),  saga(),  react(),  
         sass(), tailwind(), styled(), bootstrap(),  photoshop(), node(), 
-         postman(), postgres(), oracle(), apple(),  windows(), firebase(), mongodb(),
-         python(),
+        postman(), postgres(), oracle(), apple(),  windows(), firebase(), mongodb(),
+        python(),
     ]
     
-
     return (
         <div id='skills-section'>
             <main>
@@ -29,11 +28,13 @@ const LogoCloud = () => {
                     src={personCoding} 
                     alt='person-coding'
                 />
-                    {logoList.map((logo, index) => (
-                        <div className={`l${index + 1}`}>
-                            <li className='list-logo'>{logo}</li>
-                        </div>
-                    ))}
+                    {
+                        logoList.map((logo, index) => (
+                            <div key={logo.props.title} className={`l${index + 1}`}>
+                                <li className='list-logo'>{logo}</li>
+                            </div>
+                            ))
+                    }
                 </ul>
 
                 {/* Classes for mobile views */}
@@ -42,11 +43,13 @@ const LogoCloud = () => {
                 </div>
                 <div className="mobile-container">
                 <ul className='mobile-logo-list'>
-                    {logoList.map((logo, index) => (
-                        <div className='mobile-logo'>
-                            <li>{logo}</li>
-                        </div>
-                    ))}
+                    {
+                        logoList.map( logo => (
+                            <div key={logo.props.title} className='mobile-logo'>
+                                <li>{logo}</li>
+                            </div>
+                        ))
+                    }
                 </ul>
                     <img 
                         className='grid-image' 
