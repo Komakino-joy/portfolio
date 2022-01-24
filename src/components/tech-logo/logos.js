@@ -10,7 +10,7 @@ import pgLogo from '../../assets/postgres.logo.svg'
 import mongoLogo from '../../assets/mongodb.logo.svg'
 import nodeLogo from '../../assets/nodejs.logo.svg'
 import vueLogo from '../../assets/vue.logo.svg'
-import styledLogo from '../../assets/styled-components.png'
+import styledLogo from '../../assets/styled-components.webp'
 import bootstrapLogo from '../../assets/bootstrap-5.svg'
 import tailwindLogo from '../../assets/tailwindcss.svg'
 import oracleLogo from '../../assets/oracle.svg'
@@ -19,6 +19,10 @@ import photoshopLogo from '../../assets/photoshop.svg'
 import appleLogo from '../../assets/apple.svg'
 import windowsLogo from '../../assets/microsoft-windows.svg'
 import pythonLogo from '../../assets/python.svg'
+import gqlLogo from '../../assets/gql.logo.svg'
+import nextLogo from '../../assets/next.logo.svg'
+import hasuraLogo from '../../assets/hasura.logo.svg'
+import magicLogo from '../../assets/magic.logo.svg'
 
 
 import TechLogo from './tech-logo.component'
@@ -218,3 +222,42 @@ export const postgres = () => (
         title='PostgreSQL'
     />
 ) 
+
+export const next = () => (
+    <TechLogo 
+        href='https://nextjs.org/'
+        image={nextLogo}
+        alt='NextJs logo'
+        title='NextJs'
+    />
+) 
+
+export const magic = () => (
+    <TechLogo 
+        href='https://magic.link/'
+        image={magicLogo}
+        alt='Magic.link logo'
+        title='Magic.link'
+    />
+) 
+
+
+export const hasura = () => (
+    <TechLogo 
+        href='https://hasura.io/'
+        image={hasuraLogo}
+        alt='Haura logo'
+        title='Hasura'
+    />
+) 
+
+
+export const gql = () => (
+    <TechLogo 
+        href='https://graphql.org/'
+        image={gqlLogo}
+        alt='GraphQL logo'
+        title='GraphQL'
+    />
+) 
+

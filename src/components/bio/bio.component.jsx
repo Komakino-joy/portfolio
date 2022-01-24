@@ -1,5 +1,5 @@
 import React from 'react'
-import bioImg from '../../assets/profile-image.png'
+import bioImg from '../../assets/profile-image.webp'
 
 import './bio.style.css'
 

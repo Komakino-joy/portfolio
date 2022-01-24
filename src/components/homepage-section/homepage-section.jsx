@@ -10,7 +10,7 @@ import {
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-import laptopBase from '../../assets/laptop.png'
+import laptopBase from '../../assets/laptop.webp'
 
 import './homepage-section.styles.css'
 

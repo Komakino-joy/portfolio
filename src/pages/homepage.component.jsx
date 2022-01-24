@@ -4,44 +4,51 @@ import Banner from '../components/banner/banner.component'
 import Bio from '../components/bio/bio.component'
 import Section from '../components/homepage-section/homepage-section'
 
-import invViewMobile from '../assets/mobile-inv-view.png'
-import invViewImg from '../assets/inv-view-cropped.png'
-import progressView from '../assets/progress_view.PNG'
-import shrinkView from '../assets/shrink-page.png'
-import reportUpload from '../assets/report-upload.png'
+import invViewMobile from '../assets/mobile-inv-view.webp'
+import invViewImg from '../assets/inv-view-cropped.webp'
+import progressView from '../assets/progress_view.webp'
+import shrinkView from '../assets/shrink-page.webp'
+import reportUpload from '../assets/report-upload.webp'
 
-import lenditMobile from '../assets/mobile-lendit.png'
-import lenditSignIn from '../assets/sign-in.png' 
-import lenditHome from '../assets/lendit-home.png'
-import lenditAssets from '../assets/assets-in-use.png'
-import lenditActivity from '../assets/activity-tracking.png'
+import lenditMobile from '../assets/mobile-lendit.webp'
+import lenditSignIn from '../assets/sign-in.webp' 
+import lenditHome from '../assets/lendit-home.webp'
+import lenditAssets from '../assets/assets-in-use.webp'
+import lenditActivity from '../assets/activity-tracking.webp'
 
-import musicMobile from '../assets/mobile-vue-music.png'
-import musicHome from '../assets/vue-music-home.png'
-import musicSong from '../assets/vue-music-song-page.png'
-import musicRegister from '../assets/vue-music-register.png'
-import musicSignIn from '../assets/vue-music-sign-in.png'
+import strokesFlixMobile from '../assets/strokesflix-mobile.webp'
+import strokesFlixSignIn from '../assets/strokes-flix-desktop-signin.webp'
+import strokesFlixHome from '../assets/strokes-flix-desktop-home.webp'
+import strokesFlixMyList from '../assets/strokes-flix-desktop-my-list.webp'
+import strokesFlixVideo from '../assets/strokesflix-desktop-video.webp'
+import strokesFlixVideos from '../assets/strokesflix-desktop-videos.webp'
 
-import launchMobile from '../assets/mobile-launch-app.png'
-import launchControlHome from '../assets/launch-schedule-home.png'
-import launchControlUpcoming from '../assets/launch-schedule-upcoming.png'
-import launchControlHistory from '../assets/launch-schedule-history.png'
+import musicMobile from '../assets/mobile-vue-music.webp'
+import musicHome from '../assets/vue-music-home.webp'
+import musicSong from '../assets/vue-music-song-page.webp'
+import musicRegister from '../assets/vue-music-register.webp'
+import musicSignIn from '../assets/vue-music-sign-in.webp'
 
-import proMobile from '../assets/mobile-mus-shop.png'
-import proShopHome from '../assets/pro-home.png'
-import proShopProduct from '../assets/pro-cam.png'
-import proShopCheckout from '../assets/pro-checkout.png'
-import proShopAdmin from '../assets/pro-admin.png'
+import launchMobile from '../assets/mobile-launch-app.webp'
+import launchControlHome from '../assets/launch-schedule-home.webp'
+import launchControlUpcoming from '../assets/launch-schedule-upcoming.webp'
+import launchControlHistory from '../assets/launch-schedule-history.webp'
 
-import crwnMobile from '../assets/mobile-crwn.png'
-import crwnHome from '../assets/crwn-shop.png'
-import crwnShop from '../assets/shop-page.png'
-import crwnSignIn from '../assets/sign-in-crwn.png'
-import crwnCart from '../assets/crwn-checkout.png'
+import proMobile from '../assets/mobile-mus-shop.webp'
+import proShopHome from '../assets/pro-home.webp'
+import proShopProduct from '../assets/pro-cam.webp'
+import proShopCheckout from '../assets/pro-checkout.webp'
+import proShopAdmin from '../assets/pro-admin.webp'
+
+import crwnMobile from '../assets/mobile-crwn.webp'
+import crwnHome from '../assets/crwn-shop.webp'
+import crwnShop from '../assets/shop-page.webp'
+import crwnSignIn from '../assets/sign-in-crwn.webp'
+import crwnCart from '../assets/crwn-checkout.webp'
 
 import { 
     vue, react, redux, saga, css, sass, tailwind, bootstrap, 
-    styled, node, postgres, mongodb, firebase} from '../components/tech-logo/logos.js'
+    styled, node, postgres, mongodb, firebase, next, hasura, gql, magic} from '../components/tech-logo/logos.js'
 
 import '../App.css'
 
@@ -131,6 +138,49 @@ const Homepage = () => {
                 liveDemo='https://lendit-asset-tracker.com/'
     
                 />
+
+            <Section 
+                projectName='StrokesFlix'
+                mobileImage={strokesFlixMobile}
+                images={[
+                    {
+                        id: 'StrokesFlix SignIn',
+                        img: strokesFlixSignIn,
+                        alt: 'StrokesFlix SignIn screen preview'
+                    },
+                    {
+                        id: 'StrokesFlix Home',
+                        img: strokesFlixHome,
+                        alt: 'StrokesFlix Home screen preview'
+                    },
+                    {
+                        id: 'StrokesFlix videos',
+                        img: strokesFlixVideos,
+                        alt: 'StrokesFlix videos screen preview'
+                    },
+                    {
+                        id: 'StrokesFlix stream',
+                        img: strokesFlixVideo,
+                        alt: 'StrokesFlix stream screen preview'
+                    },
+                    {
+                        id: 'StrokesFlix List',
+                        img: strokesFlixMyList,
+                        alt: 'StrokesFlix my list screen preview'
+                    },
+                ]}
+                techStack={[ next(), css(), magic(), hasura(), gql() ]}
+                description='
+                    The StrokesFlix app is a Netflix clone project, featuring my favorite rock band  "The Strokes". 
+                    The project utilizes the Youtube API provided by Google to fetch Youtube videos
+                    relevant to the band. Users must authenticate via magic.link before they can begin browsing the video library, 
+                    they are also able to favorite videos they wish to watch again at a later time. This was a fun project that 
+                    helped me get practice with NextJs, Hasura, and magic.link.
+                '
+                githubRepo='https://github.com/Komakino-joy/vue-music'
+                liveDemo='https://github.com/Komakino-joy/strokes-flix-sfw'
+                />
+
             <Section 
                 projectName='Music Player'
                 mobileImage={musicMobile}
@@ -201,7 +251,7 @@ const Homepage = () => {
                 />
 
             <Section 
-                projectName='Mus Shop'
+                projectName='Pro Shop'
                 mobileImage={proMobile}
                 images={[
                     {
