@@ -177,7 +177,7 @@ const Homepage = () => {
                     they are also able to favorite videos they wish to watch again at a later time. This was a fun project that 
                     helped me get practice with NextJs, Hasura, and magic.link.
                 '
-                githubRepo='https://github.com/Komakino-joy/vue-music'
+                githubRepo='https://github.com/Komakino-joy/strokes-flix-sfw'
                 liveDemo='https://github.com/Komakino-joy/strokes-flix-sfw'
                 />
 
